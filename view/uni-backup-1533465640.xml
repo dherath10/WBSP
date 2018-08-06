@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database name="uni">
+	<table name="log">
+		<columns>
+			<column name="log_id" blob="" maxlength="" multiple_key="" not_null="" numeric="" primary_key="" table="log" type="3" default="" unique_key="" unsigned="" zerofill="" />
+			<column name="log_in" blob="" maxlength="" multiple_key="" not_null="" numeric="" primary_key="" table="log" type="12" default="" unique_key="" unsigned="" zerofill="" />
+			<column name="log_out" blob="" maxlength="" multiple_key="" not_null="" numeric="" primary_key="" table="log" type="12" default="" unique_key="" unsigned="" zerofill="" />
+			<column name="s_id" blob="" maxlength="" multiple_key="" not_null="" numeric="" primary_key="" table="log" type="3" default="" unique_key="" unsigned="" zerofill="" />
+		</columns>
+		<records>
+			<record>
+				<log_id>1</log_id>
+				<log_in>2018-07-01 10:10:12</log_in>
+				<log_out>2018-07-03 02:13:12</log_out>
+				<s_id>1</s_id>
+			</record>
+			<record>
+				<log_id>2</log_id>
+				<log_in>2018-07-18 02:13:11</log_in>
+				<log_out>2018-07-19 11:09:05</log_out>
+				<s_id>2</s_id>
+			</record>
+			<record>
+				<log_id>3</log_id>
+				<log_in>2018-07-22 02:12:00</log_in>
+				<log_out>2018-07-23 05:10:00</log_out>
+				<s_id>1</s_id>
+			</record>
+			<record>
+				<log_id>4</log_id>
+				<log_in>2018-07-24 04:08:00</log_in>
+				<log_out>2018-07-26 03:00:00</log_out>
+				<s_id>2</s_id>
+			</record>
+		</records>
+	</table>
+	<table name="login">
+		<columns>
+			<column name="email" blob="" maxlength="" multiple_key="" not_null="" numeric="" primary_key="" table="login" type="253" default="" unique_key="" unsigned="" zerofill="" />
+			<column name="pass" blob="" maxlength="" multiple_key="" not_null="" numeric="" primary_key="" table="login" type="252" default="" unique_key="" unsigned="" zerofill="" />
+			<column name="s_id" blob="" maxlength="" multiple_key="" not_null="" numeric="" primary_key="" table="login" type="3" default="" unique_key="" unsigned="" zerofill="" />
+		</columns>
+		<records>
+			<record>
+				<email>kenneth@gov.lk</email>
+				<pass>123</pass>
+				<s_id>1</s_id>
+			</record>
+			<record>
+				<email>ravin@gov.lk</email>
+				<pass>123</pass>
+				<s_id>2</s_id>
+			</record>
+		</records>
+	</table>
+	<table name="student">
+		<columns>
+			<column name="s_id" blob="" maxlength="" multiple_key="" not_null="" numeric="" primary_key="" table="student" type="3" default="" unique_key="" unsigned="" zerofill="" />
+			<column name="s_name" blob="" maxlength="" multiple_key="" not_null="" numeric="" primary_key="" table="student" type="253" default="" unique_key="" unsigned="" zerofill="" />
+			<column name="s_add" blob="" maxlength="" multiple_key="" not_null="" numeric="" primary_key="" table="student" type="253" default="" unique_key="" unsigned="" zerofill="" />
+			<column name="s_age" blob="" maxlength="" multiple_key="" not_null="" numeric="" primary_key="" table="student" type="3" default="" unique_key="" unsigned="" zerofill="" />
+			<column name="s_status" blob="" maxlength="" multiple_key="" not_null="" numeric="" primary_key="" table="student" type="253" default="" unique_key="" unsigned="" zerofill="" />
+		</columns>
+		<records>
+			<record>
+				<s_id>1</s_id>
+				<s_name>Kenneth</s_name>
+				<s_add>Galle</s_add>
+				<s_age>22</s_age>
+				<s_status>Active</s_status>
+			</record>
+			<record>
+				<s_id>2</s_id>
+				<s_name>Ravin</s_name>
+				<s_add>Colombo</s_add>
+				<s_age>24</s_age>
+				<s_status>Active</s_status>
+			</record>
+		</records>
+	</table>
+</database>
